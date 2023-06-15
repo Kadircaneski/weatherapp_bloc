@@ -7,8 +7,8 @@ class LastUpdateWidget extends StatelessWidget {
       {super.key,
       required this.instantDateTime,
       required this.instantDateDate});
-  final String instantDateTime;
-  final String instantDateDate;
+  final String? instantDateTime;
+  final String? instantDateDate;
 
   @override
   Widget build(BuildContext context) {

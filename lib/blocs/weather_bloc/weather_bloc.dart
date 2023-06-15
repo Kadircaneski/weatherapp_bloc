@@ -15,9 +15,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
 
   WeatherBloc() : super(const WeatherInitialState()) {
     on<WeatherEvent>((event, emit) async {
-      print('WEATHER BLOC ÇALIŞIYOR.....');
       if (event is FecthWeatherEvent) {
-      print('FECTWEATHEREVET ÇALIŞIYOR.....');
 
         emit(const WeatherLoadingState());
         try {
